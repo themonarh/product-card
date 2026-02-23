@@ -101,3 +101,15 @@
   font-size: 20px;
   line-height: 24px;
 }
+
+.buttons-wrapper {
+  background-color: #ffffff;
+  color: #515076;
+  font-family: 'Montserrat', Arial;
+}
+
+.activeColorBtn {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+

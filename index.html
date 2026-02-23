@@ -13,9 +13,17 @@
 <body>
     <div class="background-flower">
         <h1 class="label">Выбери свой продукт</h1>
-
-    </div>
-    <div class="cards-wrapper">
+    <ul>
+        <li class="buttons-wrapper">
+            <button id="colorChangeCardListBtn">Изменить цвет всех карточек</button>
+            <button id="colorChangeFirstCardBtn">Изменить цвет первой карточки</button>
+            <button id="googlePageOpenBtn">Открыть сайт Google</button>
+            <button id="outputConsoleLogBtn">Вывести в консоль лог</button>
+           <button id="colorChangeBackForthBtn" class="activeColorBtn">Сменить цвет кнопки туда-обратно</button>
+        </li>
+        </ul>
+ </div>
+       <div class="cards-wrapper">
         <ul>
             <li class="card-container">
                 <img src="img/mois-mousse.png" alt="Увлажняющий мусс" width="280" height="245">
@@ -108,6 +116,6 @@
             </li>
         </ul>
     </div>
+    <script src="main.js"></script>
 </body>
-
 </html>
