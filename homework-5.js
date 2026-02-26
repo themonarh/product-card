@@ -1,4 +1,4 @@
-function getCityTemperature() {
+function showCityTemperature() {
     let city = "Астана";
     let temperature = -25;
     console.log(`В городе ${city} сейчас температура ${temperature} градусов.`);
@@ -6,7 +6,7 @@ function getCityTemperature() {
 
 let SPEED_OF_LIGHT = 299792458;
 
-function getNameLightSpeed() {
+function compareLightSpeed() {
     if (SPEED_OF_LIGHT === 299792458) {
         console.log("Скорость света");
     } else if (SPEED_OF_LIGHT > 299792458) {
@@ -16,7 +16,7 @@ function getNameLightSpeed() {
     }
 }
 
-getNameLightSpeed();
+compareLightSpeed();
 
 let socks = 'носки';
 let price = 1000;
