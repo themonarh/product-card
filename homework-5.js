@@ -1,27 +1,27 @@
-function cityTemperature() {
+function getCityTemperature() {
     let city = "Астана";
-    let temperature = "-25";
+    let temperature = -25;
     console.log(`В городе ${city} сейчас температура ${temperature} градусов.`);
 }
 
-let speedOfLight = 299792458;
+let SPEED_OF_LIGHT = 299792458;
 
-function speedOfLightInKm() {
-    if (speedOfLight === 299792458) {
+function getNameLightSpeed() {
+    if (SPEED_OF_LIGHT === 299792458) {
         console.log("Скорость света");
-    } else if (speedOfLight > 299792458) {
+    } else if (SPEED_OF_LIGHT > 299792458) {
         console.log("Сверхсветовая скорость");
-    } else if (speedOfLight < 299792458) {
+    } else if (SPEED_OF_LIGHT < 299792458) {
         console.log("Субсветовая скорость");
     }
 }
 
-speedOfLightInKm();
+getNameLightSpeed();
 
 let socks = 'носки';
 let price = 1000;
 
-function calculate(budget) {
+function buyProduct(budget) {
     if (budget >= price) {
         console.log(`Вы купили ${socks}!`)
     } else {
@@ -30,12 +30,12 @@ function calculate(budget) {
     }
 }
 
-calculate(700);
+buyProduct(700);
 
-function catEat() {
-    let cat = "кот";
-    let food = "рыба";
-    console.log(`${cat} ест ${food}`);
+function eatFood() {
+    let cat = "cat";
+    let food = "fish";
+    console.log(`${cat} eat ${food}`);
 }
 
-catEat();
+eatFood();
