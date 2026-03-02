@@ -1,4 +1,4 @@
-const myInfo = {
+const userInfo = {
     name: "Руслан",
     age: 19,
     country: "Казахстан",
@@ -8,7 +8,7 @@ const myInfo = {
     weight: 85
 }
 
-const car = {
+const carInfo = {
     brand: "Li Auto",
     model: "Li 9",
     year: 2026,
@@ -17,29 +17,29 @@ const car = {
     power: 449
 }
 
-car.owner = me;
+carInfo.owner = userInfo;
 
 function checkMaxSpeed() {
-    if ("maxSpeed" in car)
-        return;
+    if ("maxSpeed" in carInfo)
+        return; 
     else
-        car.maxSpeed = 180
+        carInfo.maxSpeed = 180;
 }
 
-checkMaxSpeed()
+checkMaxSpeed();
 
-console.log(car)
+console.log(carInfo);
 
-const auto = {
+const autoGermany = {
     brand: "BMW",
     power: 600,
 };
 
-function showKey(obj, key) {
+function showObjectValue(obj, key) {
     console.log(obj[key]);
 }
 
-show(auto, "power");
+showObjectValue(autoGermany, "power");
 
 const productList = ["Молоко", "Хлеб", "Яйца", "Творог", "Помидоры"]
 
@@ -95,7 +95,7 @@ const harryPotter = [
 ]
 
 const marvelPlusHarryPotter = [...marvelFilms, ...harryPotter]
-console.log(marvelPlusHarryPotter)
+    console.log(marvelPlusHarryPotter)
 
 
 const updatedProductions = marvelPlusHarryPotter.map(production => {
