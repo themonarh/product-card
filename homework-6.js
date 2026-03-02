@@ -1,4 +1,4 @@
-const me = {
+const myInfo = {
     name: "Руслан",
     age: 19,
     country: "Казахстан",
@@ -19,24 +19,24 @@ const car = {
 
 car.owner = me;
 
-function checkProperty() {
-    if ("maxSpeed" in car) 
+function checkMaxSpeed() {
+    if ("maxSpeed" in car)
         return;
-    else 
+    else
         car.maxSpeed = 180
 }
 
-checkProperty()
+checkMaxSpeed()
 
 console.log(car)
 
 const auto = {
-  brand: "BMW",
-  power: 600
+    brand: "BMW",
+    power: 600,
 };
 
-function show(obj, key) {
-  console.log(obj[key]);
+function showKey(obj, key) {
+    console.log(obj[key]);
 }
 
 show(auto, "power");
@@ -44,32 +44,32 @@ show(auto, "power");
 const productList = ["Молоко", "Хлеб", "Яйца", "Творог", "Помидоры"]
 
 const marvelFilms = [
-  {
-    title: "Железный человек",
-    year: 2009,
-    mainArtist: "Роберт Дауни младший",
-    genre: "Фантастика, экшен",
-  },
-  {
-    title: "Мстители",
-    year: 2012,
-    mainArtist: "Роберт Дауни младший",
-    genre: "Фантастика, экшен",
-  },
-  {
-    title: "Тор",
-    year: 2011,
-    mainArtist: "Крис Хемсворт",
-    genre: "Фантастика, экшен",
-  }
+    {
+        title: "Железный человек",
+        year: 2009,
+        mainArtist: "Роберт Дауни младший",
+        genre: "Фантастика, экшен",
+    },
+    {
+        title: "Мстители",
+        year: 2012,
+        mainArtist: "Роберт Дауни младший",
+        genre: "Фантастика, экшен",
+    },
+    {
+        title: "Тор",
+        year: 2011,
+        mainArtist: "Крис Хемсворт",
+        genre: "Фантастика, экшен",
+    }
 ];
 
 marvelFilms.push({
-        title : "Мстители: Война бесконечности",
-        year : 2018,
-        mainArtist : "Их много",
-        genre : "Фантастика, боевик"
-    
+        title: "Мстители: Война бесконечности",
+        year: 2018,
+        mainArtist: "Их много",
+        genre: "Фантастика, боевик"
+
 });
 
 console.log(marvelFilms);
@@ -78,23 +78,23 @@ console.log(marvelFilms);
 
 const harryPotter = [
     {
-    title : "Гарри Поттер и узник Азкабана",
-    year : 2004,
-    genre : "Фантастика",
+        title: "Гарри Поттер и узник Азкабана",
+        year: 2004,
+        genre: "Фантастика",
     },
     {
-    title : "Гарри Поттер и Орден Феникса",
-    year : 2007,
-    genre : "Фантастика",
+        title: "Гарри Поттер и Орден Феникса",
+        year: 2007,
+        genre: "Фантастика",
     },
     {
-    title : "Гарри Поттер и принц-полукровка",
-    year : 2009,
-    genre : "Фантастика",
+        title: "Гарри Поттер и принц-полукровка",
+        year: 2009,
+        genre: "Фантастика",
     }
 ]
 
-const marvelPlusHarryPotter = [ ...marvelFilms, ...harryPotter]
+const marvelPlusHarryPotter = [...marvelFilms, ...harryPotter]
 console.log(marvelPlusHarryPotter)
 
 
