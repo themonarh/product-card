@@ -5,8 +5,8 @@ const userInfo = {
     city: "Астана",
     work: "Клининг",
     height: 183,
-    weight: 85
-}
+    weight: 85,
+};
 
 const carInfo = {
     brand: "Li Auto",
@@ -14,16 +14,17 @@ const carInfo = {
     year: 2026,
     color: "black",
     transmission: "Electric",
-    power: 449
-}
+    power: 449,
+};
 
 carInfo.owner = userInfo;
 
 function checkMaxSpeed() {
-    if ("maxSpeed" in carInfo)
-        return; 
-    else
+    if ("maxSpeed" in carInfo) {
+        return;
+    } else {
         carInfo.maxSpeed = 180;
+    }
 }
 
 checkMaxSpeed();
@@ -41,7 +42,13 @@ function showObjectValue(obj, key) {
 
 showObjectValue(autoGermany, "power");
 
-const productList = ["Молоко", "Хлеб", "Яйца", "Творог", "Помидоры"]
+const productList = [
+    "Молоко",
+    "Хлеб",
+    "Яйца",
+    "Творог",
+    "Помидоры",
+];
 
 const marvelFilms = [
     {
@@ -61,15 +68,14 @@ const marvelFilms = [
         year: 2011,
         mainArtist: "Крис Хемсворт",
         genre: "Фантастика, экшен",
-    }
+    },
 ];
 
 marvelFilms.push({
-        title: "Мстители: Война бесконечности",
-        year: 2018,
-        mainArtist: "Их много",
-        genre: "Фантастика, боевик"
-
+    title: "Мстители: Война бесконечности",
+    year: 2018,
+    mainArtist: "Их много",
+    genre: "Фантастика, боевик",
 });
 
 console.log(marvelFilms);
@@ -91,17 +97,20 @@ const harryPotter = [
         title: "Гарри Поттер и принц-полукровка",
         year: 2009,
         genre: "Фантастика",
-    }
-]
+    },
+];
 
-const marvelPlusHarryPotter = [...marvelFilms, ...harryPotter]
-    console.log(marvelPlusHarryPotter)
+const marvelPlusHarryPotter = [
+    ...marvelFilms,
+    ...harryPotter,
+];
 
+console.log(marvelPlusHarryPotter);
 
-const updatedProductions = marvelPlusHarryPotter.map(production => {
+const updatedProductions = marvelPlusHarryPotter.map((production) => {
     return {
         ...production,
-        isRare: production.year < 2000
+        isRare: production.year < 2000,
     };
 });
 
