@@ -19,12 +19,12 @@ function renderProducts(products) {
     });
 }
 
-const resultReduce = products.reduce((acc, product) => {
+const getArray = products.reduce((acc, product) => {
     acc.push({ [product.name]: product.description });
     return acc;
 }, []);
 
-console.log(resultReduce);
+console.log(getArray);
 
 function getProductCount() {
     const count = Number(prompt('Сколько отобразить карточек? (1-5)'));
