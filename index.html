@@ -5,114 +5,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Card</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Card</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="modal.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <div class="overlay overlay-showed"></div>
-    <button type="button" class="register-button">Зарегистрироваться</button>
+
+    <button type="button" class="register-button">
+        Зарегистрироваться
+    </button>
+
     <div class="page-cards">
-        <h3 class="headline" id="title">Выбери свой продукт</h3>
-        <h3 class="page-management">
-            </h3>
-            <ul id="product-list"></ul>
-            <template id="product-template">
-                <li class="card-container">
-                    <img class="product-img" alt="img" width="290" height="245">
-                    <span class="product-category"></span>
-                    <h3 class="product-name"></h3>
-                    <p class="product-description"></p>
-                    <span>Состав:</span>
-                    <ul class="product-compound"></ul>
-                    <div class="product-price-container">
-                        <span class="product-price-label">Цена</span>
-                        <span class="product-price">&#8381</span>
-                    </div>
-                </li>
-                <li class="card-container">
-                    <img class="product-img" alt="img" width="290" height="245">
-                    <span class="product-category"></span>
-                    <h3 class="product-name"></h3>
-                    <p class="product-description"></p>
-                    <span>Состав:</span>
-                    <ul class="product-compound"></ul>
-                    <div class="product-price-container">
-                        <span class="product-price-label">Цена</span>
-                        <span class="product-price">&#8381</span>
-                    </div>
-                </li>
-            </template>
+        <h3 class="headline" id="title">
+            Выбери свой продукт
+        </h3>
+
+        <h3 class="page-management"></h3>
+
+        <ul id="product-list"></ul>
+
+        <template id="product-template">
+            <li class="card-container">
+                <img class="product-img" alt="img" width="290" height="245">
+
+                <span class="product-category"></span>
+
+                <h3 class="product-name"></h3>
+
+                <p class="product-description"></p>
+
+                <span>Состав:</span>
+
+                <ul class="product-compound"></ul>
+
+                <div class="product-price-container">
+                    <span class="product-price-label">Цена</span>
+                    <span class="product-price">&#8381</span>
+                </div>
+            </li>
+        </template>
     </div>
-    <button type="submit" id="autentication-button" class="autentication-button">Аутентификация</button>
-    </form>
-    </div>
-    </div>
+
+    <button type="submit" id="autentication-button" class="autentication-button">
+        Аутентификация
+    </button>
+
     <footer class="footer">
         <div class="footer_container">
             <div class="left_column">
-                <h4 class="left-footer_title">Product Cards</h4>
+                <h4 class="left-footer_title">
+                    Product Cards
+                </h4>
+
                 <nav class="product-menu show-product">
                     <ul class="show-product">
                         <li>
-                            <a href="#" class="product-link">У Нас Самые Лучшие Продукты Для Кожи!</a>
+                            <a href="#" class="product-link">
+                                У Нас Самые Лучшие Продукты Для Кожи!
+                            </a>
                         </li>
                     </ul>
                 </nav>
             </div>
+
             <div class="medium_column">
-                <h4 class="medium-footer_title">Подпишись на наши акции:</h4>
+                <h4 class="medium-footer_title">
+                    Подпишись на наши акции:
+                </h4>
+
                 <form id="email-form" class="email-form">
                     <div class="footer_input">
                         <input type="text" name="email" placeholder="Введи Email...">
+
                         <div class="vertical-line"></div>
+
                         <button type="submit" class="footer_button">
                             Подписаться
                         </button>
                     </div>
                 </form>
             </div>
+
             <div class="right_column">
-                <h4 class="right-footer_title">Быстрые ссылки</h4>
+                <h4 class="right-footer_title">
+                    Быстрые ссылки
+                </h4>
+
                 <nav class="footer_menu menu-footer">
                     <ul class="menu-footer_list">
                         <li class="menu-footer_item">
                             <a href="#" class="menu-footer_link">Главная</a>
                         </li>
+
                         <li class="menu-footer_item">
                             <a href="#" class="menu-footer_link">Магазин</a>
                         </li>
+
                         <li class="menu-footer_item">
                             <a href="#" class="menu-footer_link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
             </div>
+
             <img class="telega-img" src="./images/telegram.svg" width="21" height="17.61">
+
             <img class="vk-img" src="./images/vk.svg" width="24" height="14">
         </div>
+
         <div class="horizontal-line"></div>
+
         <div class="address">
             <nav class="website_link">
                 <li class="link">
-                    <a href="#" class="product_cards-link">www.product-cards.com©all right reserve</a>
+                    <a href="#" class="product_cards-link">
+                        www.product-cards.com©all right reserve
+                    </a>
                 </li>
             </nav>
         </div>
     </footer>
+
     <script src="main.js" type="module"></script>
     <script src="homework-8.js" type="module"></script>
     <script src="homework-9.js" type="module"></script>
